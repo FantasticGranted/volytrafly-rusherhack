@@ -1,0 +1,34 @@
+VolytraFly for RusherHack
+==========================
+
+The flight logic, settings, highway navigation, player avoidance, and HUD
+behaviour in this plugin are a port of VolytraFly-Addon by Volizray:
+
+    https://github.com/Volizray/VolytraFly-Addon
+
+That project is dedicated to the public domain under the CC0 1.0 Universal
+public domain dedication. A copy of that dedication is in LICENSE.
+
+VolytraFly-Addon was built from the Meteor Addon Template
+(https://github.com/MeteorDevelopment/meteor-addon-template) and runs as a
+Meteor Client addon. This repository reimplements it against the RusherHack
+plugin API. The Gradle layout follows RusherDevelopment/example-plugin
+(https://github.com/RusherDevelopment/example-plugin).
+
+The original addon icon is included at
+src/main/resources/assets/volytrafly/icon.png.
+
+VolytraFly-Addon 0.1.1, the revision this port is based on, notes:
+
+- Speed no longer resets to min speed value after rubberbanding, but back
+  along the acceleration curve (so a rubberband at 300 bps reduces speed by <1%)
+- Added a rubberband speed cap, so if server speed changes while in-game,
+  VolytraFly will detect and limit your speed too for smoother flight
+- Added visuals, including a speedometer, fuel gauge, light switches for
+  modes, Volytra assistant, and future sight
+- Added bypass mode, which flies using additive acceleration to act more like
+  normal elytra flight
+- Removed some unnecessary features from the options like player avoidance's
+  vertical step since they never really need to be changed
+- Added highway mode, which uses a hybrid of mob pathfinding and custom
+  navigation to travel across highways

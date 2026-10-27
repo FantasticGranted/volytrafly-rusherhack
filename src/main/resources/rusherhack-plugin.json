@@ -1,0 +1,13 @@
+{
+  "Plugin-Class": "com.volytrafly.rusher.VolytraFlyPlugin",
+  "Name": "${project.plugin_name}",
+  "Version": "${project.plugin_version}",
+  "Description": "RusherHack port of VolytraFly, an elytra flight module originally written for Meteor Client.",
+  "URL": "https://github.com/Volizray/VolytraFly-Addon",
+  "Authors": [
+    "Volizray"
+  ],
+  "Minecraft-Versions": [
+    "${project.minecraft_version}"
+  ]
+}
